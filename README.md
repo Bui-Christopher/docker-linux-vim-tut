@@ -1,22 +1,31 @@
 # Docker Template
 
-Simple problems for learning and practicing containerization.
+Simple problems and solutions for learning and practicing containerization.
 
 ## Prerequisites
 
-The expectation is to run this within a Unix machine either within a Linux VM or a Mac.
+The expectation is to run this within a Unix machine either as a Linux VM or a Mac.
 
 ## Table of Contents 
 [01 - Install Docker](01/README.md)
 
-## TODO 
+[02 - Run Hello World](02/README.md)
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+[03 - Run Debian Containers x2](03/README.md)
+
+[04 - Docker Compose](04/README.md)
+
+[05 - Volumes](05/README.md)
+
+[06 - Cron Job](06/README.md)
+
+[07 - Update Container](07/README.md)
+
+## TODO 
+- [ ] 01 - Install Docker
+- [ ] 02 - Run Hello World
+- [ ] 03 - Run Debian Containers x2
+- [ ] 04 - Docker Compose
+- [ ] 05 - Volumes
+- [ ] 06 - Cron Job
+- [ ] 07 - Update Container
