@@ -9,15 +9,15 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 ## Table of Contents 
 [01 - Install Docker](01)
 
-[02 - Run Debian Containers x2](03/README.md)
+[02 - Run Multiple (2) Debian Containers](02)
 
-[03 - Docker Compose](04/README.md)
+[03 - Docker Compose](03)
 
-[04 - Volumes](05/README.md)
+[04 - Volumes](04)
 
-[05 - Cron Job](06/README.md)
+[05 - Cron Job](05)
 
-[06 - Update Container](07/README.md)
+[06 - Update Container](06)
 
 ## TODO 
 - [X] 01
