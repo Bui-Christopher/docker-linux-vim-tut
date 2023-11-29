@@ -7,7 +7,7 @@ Simple problems and solutions for learning and practicing containerization.
 The expectation is to run this within a Unix machine either as a Linux VM or a Mac.
 
 ## Table of Contents 
-[01 - Install Docker](01/README.md)
+[01 - Install Docker](01)
 
 [02 - Run Debian Containers x2](03/README.md)
 
