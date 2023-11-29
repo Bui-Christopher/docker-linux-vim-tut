@@ -11,7 +11,7 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 
 [02 - Run Multiple (2) Debian Containers](02)
 
-[03 - Docker Compose](03)
+[03 - NGINX and Docker Compose](03)
 
 [04 - Volumes](04)
 
@@ -21,7 +21,7 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 
 ## TODO 
 - [X] 01
-- [ ] 02
+- [X] 02
 - [ ] 03
 - [ ] 04
 - [ ] 05

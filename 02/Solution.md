@@ -17,11 +17,12 @@ Let's add an additional flags like "-it" and "-d"
 
 ```docker run -it debian```
 
+We're in the debian container! Once within the container, we can leave with `exit`
+
 Let's break down the command. Of course, we first call docker, but we also have other commands. In our case we used `run`.
 However, we can explore more commands with `help` Example: `docker help`.
 
 Additionally, we have `-it`. That represents, "interactive" "tty". It will run the default command in the Docker image, and in the case of debian, it'll be `/bin/bash`
-Once within the container, we can leave with `exit`
 
 Let's add a name (deb) to our container instead of having docker giving silly default names like `sweet_ugle`
 
@@ -46,8 +47,9 @@ Found it! We can see that it exited after we exited the tty. Let's remove it wit
 or
 ```docker rm $CONTAINER_ID```
 
-Of course, modify the placeholders with the corresponding variables on your machine.
+Using tab here will be very beneficial. type `docker rm $INITAL_CHARACTERS + TAB`
 
+Of course, modify the placeholders with the corresponding variables on your machine.
 
 Additional notes:
 You'll notice that Docker tries to find the `debian:latest` image. If it does not exist, it'll download the image.
