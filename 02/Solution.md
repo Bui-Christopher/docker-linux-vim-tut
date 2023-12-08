@@ -13,7 +13,7 @@ First, we'll run a debian container, and it'll be simple:
 Great, nothing happened. Let's continue on to try and explore what actually is going on.
 
 ### Add additional flags
-Let's add an additional flags like "-it" and "-d"
+Let's add additional flags like "-it" and "-d"
 
 ```docker run -it debian```
 
@@ -70,7 +70,7 @@ Well, we can force our own process to continiously run.
 ```docker run -d --name deb debian tail -f /dev/null```
 
 Let's break some of those flags down. We already have experience with `docker run -d --name deb debian` what about `tail -f /dev/null`?
-Actually, this is not docker specific, rather linux specific. We're essentially calling the container to run this command. Which is essentially does nothing runs a process that keeps the container running.
+Actually, this is not docker specific, rather linux specific. We're essentially calling the container to run this command. Which essentially does nothing but run a process that keeps the container running.
 
 Check its status with:
 
