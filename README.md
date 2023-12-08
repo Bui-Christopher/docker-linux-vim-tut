@@ -1,6 +1,6 @@
-# Docker Template
+# Docker-Linux-Vim-Tut
 
-Simple problems and solutions for learning and practicing containerization.
+Simple problems and solutions for learning and practicing containerization, linux, and vim.
 
 ## Prerequisites
 
