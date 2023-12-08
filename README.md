@@ -11,18 +11,21 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 
 [02 - Run Multiple (2) Debian Containers](02)
 
-[03 - NGINX and Docker Compose](03)
+[03 - Linux Files/Directories and Intro to NeoVim](03)
 
-[04 - Volumes](04)
+[04 - NGINX and Docker Compose](04)
 
-[05 - Cron Job](05)
+[05 - Volumes](05)
 
-[06 - Update Container](06)
+[06 - Cron Job](06)
+
+[07 - Update Container](07)
 
 ## TODO 
 - [X] 01
 - [X] 02
-- [ ] 03
+- [X] 03
 - [ ] 04
 - [ ] 05
 - [ ] 06
+- [ ] 07
