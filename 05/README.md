@@ -78,10 +78,69 @@ Would you look at that? There's a file `test.txt` on our host machine!
 So far we've been fortunate of using dockerfiles that have pulled from dockerhub. How can we write our own docker container?
 How do we create our own docker containers? With a `Dockerfile`!
 
+### What is a Dockerfile?
+[Docs](https://docs.docker.com/reference/dockerfile/)
+```
+A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+```
+
+### Create a Dockerfile
+Well now that we know what a dockerfile is, let's try creating one:
 ```
 mkdir docker
 touch Dockerfile
 nvim Dockerfile
 ```
 
-```todo```
+
+Write this into a Dockerfile, and let's break it down.
+```
+# Use the official Nginx image as base
+FROM nginx:latest
+
+# Copy the HTML file to be served
+COPY index.html /usr/share/nginx/html/
+
+# Expose port 80
+EXPOSE 80
+```
+
+It looks like use can use the `#` character and it'll be ignored. In this case, it'll be comments throughout the Dockerfile
+to make it more human readable. Additionally, on the left, looks like commands: `FROM` `COPY` `EXPOSE`. It's a common practice
+to have these commands to be in all capitals. Additionally, one of the commands copies an `index.html` into the `/usr/share/nginx/html`.
+Sounds familiar?
+
+Now that we have this Dockerfile, let's ensure that we also create that `index.html` then build the image!
+
+```
+touch index.html
+nvim .index.hmtl
+```
+
+Place this into `index.html`:
+```
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Docker Nginx</title>
+</head>
+<body>
+  <h2>Custom Nginx hello!</h2>
+</body>
+</html>
+```
+
+Afteward, let's build and test it.
+```
+docker build -t custom-nginx .
+docker images
+```
+
+And of course, let's run it:
+```
+docker run -d -p 8080:80 custom-nginx
+```
+
+Tada! We've created our own custom nginx image. We started with a preexisting image `FROM nginx:latest`. Then, we added
+custom files and built the new image.

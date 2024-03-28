@@ -26,7 +26,9 @@ ls
 Quick recap, we checked our current directory with `pwd` and it's contents with `ls`. Afterward, we created a folder and entered that folder with `cd` and `mkdir`.
 What happens if we type `cd` without specifying a directory?
 Type:
-```cd```
+```
+cd
+```
 
 Looks like nothing happened? Let's see with `pwd`.
 

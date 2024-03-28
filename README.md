@@ -1,6 +1,6 @@
 # Docker-Linux-Vim-Tut
 
-Simple problems and solutions for learning and practicing docker, linux, and vim.
+Simple tutorial for learning and practicing docker, linux, and vim.
 
 ## Prerequisites
 
@@ -17,9 +17,4 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 
 [05 - Volumes and Custom Dockerfiles](05/README.md)
 
-## TODO 
-- [X] 01
-- [X] 02
-- [X] 03
-- [X] 04
-- [ ] 05
+[06 - Recap and Conclusion](06/README.md)
