@@ -1,4 +1,4 @@
-# 04 - NGINX and Bash Scripts
+# 04 - NGINX and Intro to Bash Scripts
 
 ## Prerequisites
 This lesson assumes that know how to start a debian container.

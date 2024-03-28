@@ -13,11 +13,9 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 
 [03 - Linux and Intro to NeoVim](03/README.md)
 
-[04 - NGINX and Bash Scripts](04/README.md)
+[04 - NGINX and Intro to Bash Scripts](04/README.md)
 
-[05 - Volumes and Cron Jobs](05/README.md)
-
-[06 - Custom Dockerfile](05/README.md)
+[05 - Volumes and Custom Dockerfiles](05/README.md)
 
 ## TODO 
 - [X] 01
@@ -25,4 +23,3 @@ The expectation is to run this within a Unix machine either as a Linux VM or a M
 - [X] 03
 - [X] 04
 - [ ] 05
-- [ ] 06
