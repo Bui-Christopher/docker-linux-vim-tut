@@ -29,18 +29,21 @@ docker run --name nginx -d -p 80:80 nginx
 
 ### Curl the Nginx container
 Let's examine the container in different manners.
-1. Let's check the logs
+1. Docker Logs
     ```
     docker ps -a
     docker logs nginx
     ```
 Looks like it's running, but I have no idea what these logs are saying...
 
-2. Let's try testing with curl.
-`curl -x GET localhost:80`
+2. Curl
+```
+curl -x GET localhost:80
+```
 Great. This looks a bit more readable?
 
 3. Browser
+
 Actually, the port `80` is a standard for browsers. When we access http://localhost, it's the same as 
 entering http://localhost:80. Open up your browser (chrome, fiefox, etc) and type: `localhost`.
 Hopefully, a `Welcome to nginx!` page appears.
@@ -55,7 +58,7 @@ Browser: http://localhost:8080
 ```
 
 ## Bash Script Automation
-Let's try refactoring running the container with a Bash script.
+Let's try running the container with a Bash script instead.
 Let's write out our first script and run it:
 
 Create a script named `nginx.sh` and place it within a folder: `scripts/`.
@@ -75,15 +78,18 @@ docker run -d --name nginx -p 80:80 nginx
 ```
 
 Let's break down this bash script:
-The first line starts with a shebang: `#!/bin/bash`. This tells the operating system what interpreter to run the script with.
-In this case, we will be using `/bin/bash`. If you recall, when we hop into a container, we also call `docker exec -it $NAME /bin/bash`
 
-Then, we stop and remove any container with the name `nginx` and run a new `nginx` container.
+The first line starts with a shebang: `#!/bin/bash`. This tells the operating system what interpreter to run the script with.
+In this case, we will be using `/bin/bash`. If you recall, when we hop into a container, we also call `docker exec -it $CONTAINER_NAME /bin/bash`
+Afterward, we stop and remove any container with the name `nginx` and run a new `nginx` container.
+
 Let's run this script:
 `./nginx.sh`
 
 Unfortunately, the script didn't run. Why not?
-`zsh: permission denied: ./test.sh`
+```
+zsh: permission denied: ./test.sh
+```
 
 Well, it says permission denied; however, what happened is that we created a text file. Now let's convert it into an executable we can run:
 ```
