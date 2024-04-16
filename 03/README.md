@@ -132,6 +132,12 @@ nvim
 :help
 ```
 
+Afterward, run the tutorial.
+```
+nvim
+:Tutor
+```
+
 The final task is to use neovim to write `echo Hello World` within the `/scripts/hello.sh` we created earlier. 
 
 Of course we can skip NeoVim entirely and use nano, but Vim/Emacs is a standard which is worth practicing. Good luck!
